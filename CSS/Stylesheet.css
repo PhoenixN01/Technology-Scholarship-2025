@@ -1,12 +1,13 @@
 
 /* Positions gradient container at the corner of the page with a fixed width, height, and a specified gradient pattern from the design process*/
 .header-container {
-    display: block;
+    display: flex;
     position: absolute;
     width: 1500px;
     height: 115px;
     background-image: linear-gradient(90deg, rgba(17, 84, 113, 1) 35%, rgba(0, 121, 145, 1) 67%, rgba(70, 155, 136, 1) 83%);
     align-items: center;
+    justify-content: center;
 }
 
 #header-title {
@@ -14,4 +15,8 @@
     width: 608px;
     left: 157px;
     text-align: center;
+}
+
+#header-image {
+    left: 1440px;
 }
