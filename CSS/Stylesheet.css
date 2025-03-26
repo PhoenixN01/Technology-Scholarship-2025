@@ -4,7 +4,7 @@
 }
 
 
-/* Positions gradient container at the corner of the page with a fixed width, height, and a specified gradient pattern from the design process*/
+/* Positions gradient container at the corner of the page with a fixed width, height, and a specified gradient pattern from the design process */
 .header-container {
     display: flex;
     position: absolute;
@@ -14,11 +14,6 @@
     justify-content: center;
     overflow-x: hidden;
     overflow-y: hidden;
-}
-
-.header-nav-icon {
-    position: relative;
-    left: 50px;
 }
 
 #header-title {
