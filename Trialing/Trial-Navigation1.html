@@ -19,7 +19,7 @@
             display: none; /* Initially hidden */
             position: relative;
             top: 115px;
-            bottom: 550px;
+            bottom: 0px;
             left: 0;
             width: 200px;
             height: 550px;
@@ -27,6 +27,8 @@
             color: #ffffff;
             z-index: 999; /* place menu above all other elements except for header */
             text-align: center;
+            transform-origin: translate(0, -100%);
+            transform: 0;
         }
 
         .dropdown-menu-container .nav-link {
@@ -138,9 +140,11 @@
         // Toggle dropdown visibility
         dropdownButton.addEventListener('click', function () {
             if (dropdownMenuContainer.style.display === 'block') {
+                dropdownMenuContainer.style.transform = '0';
                 dropdownMenuContainer.style.display = 'none';
             } else {
                 dropdownMenuContainer.style.display = 'block';
+                dropdownMenuContainer.style.transform = 'translate()';
             }
         });
 
