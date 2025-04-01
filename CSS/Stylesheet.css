@@ -3,7 +3,9 @@
     margin: 0 auto;
 }
 
-
+header {
+    z-index: 2;
+}
 /* Positions gradient container at the corner of the page with a fixed width, height, and a specified gradient pattern from the design process */
 .header-container {
     display: flex;
@@ -16,9 +18,10 @@
     overflow-x: hidden;
     overflow-y: hidden;
     box-shadow: 0px 15px 10px;
-    z-index: 1000;
+    z-index: 2;
 }
 
+/* Formats the title text for the header */
 #header-title {
     color: #ebebeb;
     width: 608px;
@@ -33,4 +36,105 @@
 .header-pattern {
     position: relative;
     left: 185px; /* moves pattern to right side of the header without intefering with the alignment of other items */
+}
+
+/* Nav Bar Styling */
+.dropdown-menu-container {
+    display: none; /* Initially hidden */
+    position: relative;
+    top: 115px;
+    bottom: 0px;
+    left: 0;
+    width: 200px;
+    height: 550px;
+    background-color: #343a40;
+    color: #ffffff;
+    z-index: 1; /* place menu above all other elements except for header */
+    text-align: center;
+    transform-origin: translate(0, -100%);
+    transform: 0;
+}
+
+/* Formats the text for the nav links */
+.dropdown-menu-container .nav-link {
+    color: white;
+    font-size: 30px;
+    font-family: 'Josefin Sans';
+}
+
+/* Positions navigation button relative to the header */
+.nav-btn {
+    position: relative;
+    left: 50px;
+    background-color: transparent !important; /* Sets the button to be hidden so that the image appears to be the button */
+    border: transparent !important;
+}
+
+/* animates the button when being hovered on */
+.nav-btn:hover {
+    background-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+/* changes animation appearance when button is active */
+.nav-btn:active {
+    background-color: rgba(155, 155, 155, 0.1) !important;
+}
+
+/* sets each item in the nav to have the same colour */
+.dropdown-menu-container .nav-item {
+    color: rgb(17, 84, 113);
+}
+
+/* sets the nav to have the same colour as the items*/
+.nav {
+    color: rgb(17, 84, 113);
+    width: 200px;
+}
+
+/* formats each nav item to have the same spacing and layout as each other */
+.nav-item {
+    display: flex;
+    justify-content: center;
+    background-color: #115471;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nav-divider-container {
+    margin: 0, auto;
+    width: 60px;
+}
+
+hr.nav-divider {
+    height: 3px;
+    background-color: white;
+    border: none;
+    opacity: 1;
+}
+
+.nav-link {
+    line-height: 1;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    transform: scale(105%);
+}
+
+.nav-spacer {
+    padding-bottom: 10px;
+}
+
+main {
+    z-index: 1;
+}
+
+.main-bg {
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    top: 115px;
+    width: 1500px;
+    height: 1024px;
+    background-image: radial-gradient(rgba(64, 85, 144, 1) 0%, rgba(34, 46, 80, 1) 85%);
 }
