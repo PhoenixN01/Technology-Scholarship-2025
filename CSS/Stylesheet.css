@@ -1,11 +1,13 @@
 .max-width-div {
     width: 1500px;
+    height: 1269px;
     margin: 0 auto;
 }
 
 header {
     z-index: 2;
 }
+
 /* Positions gradient container at the corner of the page with a fixed width, height, and a specified gradient pattern from the design process */
 .header-container {
     display: flex;
@@ -18,7 +20,7 @@ header {
     overflow-x: hidden;
     overflow-y: hidden;
     box-shadow: 0px 15px 10px;
-    z-index: 2;
+    z-index: 3;
 }
 
 /* Formats the title text for the header */
@@ -40,7 +42,8 @@ header {
 
 /* Nav Bar Styling */
 .dropdown-menu-container {
-    display: none; /* Initially hidden */
+    display: flex;
+    visibility: hidden;
     position: relative;
     top: 115px;
     bottom: 0px;
@@ -49,7 +52,7 @@ header {
     height: 550px;
     background-color: #343a40;
     color: #ffffff;
-    z-index: 1; /* place menu above all other elements except for header */
+    z-index: 2;
     text-align: center;
     transform-origin: translate(0, -100%);
     transform: 0;
@@ -60,6 +63,17 @@ header {
     color: white;
     font-size: 30px;
     font-family: 'Josefin Sans';
+    line-height: 1;
+    font-weight: bold;
+}
+
+/* animate each nav link */
+.dropdown-menu-container .nav-link:hover {
+    transform: scale(105%);
+}
+
+.dropdown-menu-container .nav-spacer {
+    padding-bottom: 10px;
 }
 
 /* Positions navigation button relative to the header */
@@ -80,19 +94,9 @@ header {
     background-color: rgba(155, 155, 155, 0.1) !important;
 }
 
-/* sets each item in the nav to have the same colour */
+/* sets each item in the drop down nav to have the same colour, formats each nav item to have the same spacing and layout as each other */
 .dropdown-menu-container .nav-item {
     color: rgb(17, 84, 113);
-}
-
-/* sets the nav to have the same colour as the items*/
-.nav {
-    color: rgb(17, 84, 113);
-    width: 200px;
-}
-
-/* formats each nav item to have the same spacing and layout as each other */
-.nav-item {
     display: flex;
     justify-content: center;
     background-color: #115471;
@@ -100,41 +104,59 @@ header {
     padding-bottom: 10px;
 }
 
-.nav-divider-container {
+.dropdown-menu-container .nav-link:hover {
+    color: white !important;
+}
+
+/* sets the header nav to have the same colour as the items*/
+.dropdown-menu-container .nav {
+    color: rgb(17, 84, 113);
+    width: 200px;
+}
+
+.dropdown-menu-container .nav-divider-container {
     margin: 0, auto;
     width: 60px;
 }
 
-hr.nav-divider {
+.dropdown-menu-container hr.nav-divider {
     height: 3px;
     background-color: white;
     border: none;
     opacity: 1;
 }
 
-.nav-link {
-    line-height: 1;
-    font-weight: bold;
-}
-
-.nav-link:hover {
-    transform: scale(105%);
-}
-
-.nav-spacer {
-    padding-bottom: 10px;
-}
-
 main {
     z-index: 1;
+    display: flex;
+    position: relative;
+    bottom: 435px;
 }
 
 .main-bg {
-    margin: 0 auto;
-    position: relative;
-    display: flex;
-    top: 115px;
     width: 1500px;
     height: 1024px;
     background-image: radial-gradient(rgba(64, 85, 144, 1) 0%, rgba(34, 46, 80, 1) 85%);
+}
+
+footer {
+    margin: 0 auto;
+    position: relative;
+    bottom: 437px;
+    z-index: 1;
+}
+
+.footer-container {
+    width: 1500px;
+    height: 130px;
+    background-color: rgb(26, 36, 62);
+}
+
+.footer-container .nav {
+    margin: 0 auto;
+    width: 1500px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
