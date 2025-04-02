@@ -121,7 +121,7 @@ header {
 
 .dropdown-menu-container hr.nav-divider {
     height: 3px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border: none;
     opacity: 1;
 }
@@ -147,6 +147,9 @@ footer {
 }
 
 .footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 1500px;
     height: 130px;
     background-color: rgb(26, 36, 62);
@@ -154,9 +157,41 @@ footer {
 
 .footer-container .nav {
     margin: 0 auto;
-    width: 1500px;
-    height: 130px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+}
+
+.footer-container .nav-item {
+    padding: 0px 20px;
+}
+
+.footer-container .nav-link:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.footer-container .nav-link {
+    font-family: 'Josefin Sans';
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(214, 214, 214, 0.85);
+}
+
+.footer-watermark {
+    font-family: 'Josefin Sans';
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(214, 214, 214, 0.35) !important;
+    position: relative;
+    left: 220px;
+    top: 60px;
+}
+
+.footer-contentDisclaimer {
+    position: relative;
+    right: 220px;
+    top: 85px;
+    width: 440px;
+    font-size: 15px;
+    font-family: 'Lunasima', sans-serif;
+    font-weight: bold;
+    color: rgba(179, 179, 179, 0.45);
 }
