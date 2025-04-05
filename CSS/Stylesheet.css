@@ -156,8 +156,8 @@ footer {
 }
 
 .footer-container .nav {
-    margin: 0 auto;
     position: relative;
+    right: 70px;
 }
 
 .footer-container .nav-item {
@@ -181,14 +181,12 @@ footer {
     font-weight: bold;
     color: rgba(214, 214, 214, 0.35) !important;
     position: relative;
-    left: 220px;
     top: 60px;
 }
 
 .footer-contentDisclaimer {
     position: relative;
-    right: 220px;
-    top: 85px;
+    top: 60px;
     width: 440px;
     font-size: 15px;
     font-family: 'Lunasima', sans-serif;
