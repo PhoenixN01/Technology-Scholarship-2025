@@ -164,16 +164,31 @@ footer {
     padding: 0px 20px;
 }
 
-.footer-container .nav-link:hover {
-    color: rgba(255, 255, 255, 1);
-}
-
 .footer-container .nav-link {
     font-family: 'Josefin Sans';
     font-size: 20px;
     font-weight: bold;
     color: rgba(214, 214, 214, 0.85);
 }
+
+.footer-container .nav-link:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.footer-container .active-page {
+    color: rgba(255, 255, 255, 1) !important;
+    pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
+
 
 .footer-watermark {
     font-family: 'Josefin Sans';
