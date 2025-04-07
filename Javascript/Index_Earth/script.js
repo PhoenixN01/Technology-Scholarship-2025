@@ -85,7 +85,7 @@ Promise.all([
     // Base camera
     const camera = new THREE.PerspectiveCamera(25, sizes.width / sizes.height, 0.1, 100);
     camera.position.x = 12;
-    camera.position.y = 5;
+    camera.position.y = -3;
     camera.position.z = 4;
     scene.add(camera);
 
