@@ -1,3 +1,4 @@
+
 .max-width-div {
     width: 1500px;
     height: 1269px;
@@ -114,11 +115,13 @@ header {
     width: 200px;
 }
 
+/* Configures the div that holds the dividers in between each nav link */
 .dropdown-menu-container .nav-divider-container {
     margin: 0, auto;
     width: 60px;
 }
 
+/* Changes the size and colour of the divider */
 .dropdown-menu-container hr.nav-divider {
     height: 3px;
     background-color: rgb(255, 255, 255);
@@ -131,12 +134,14 @@ main {
     display: flex;
     position: relative;
     bottom: 435px;
+    overflow: hidden;
 }
 
 .main-bg {
     width: 1500px;
     height: 1024px;
     background-image: radial-gradient(rgba(64, 85, 144, 1) 0%, rgba(34, 46, 80, 1) 85%);
+    display: block;
 }
 
 footer {
@@ -180,16 +185,6 @@ footer {
     pointer-events: none;
 }
 
-
-
-
-
-
-
-
-
-
-
 .footer-watermark {
     font-family: 'Josefin Sans';
     font-size: 20px;
@@ -207,4 +202,11 @@ footer {
     font-family: 'Lunasima', sans-serif;
     font-weight: bold;
     color: rgba(179, 179, 179, 0.45);
+}
+
+.webgl
+{
+    margin: 0 auto;
+    outline: none;
+    pointer-events: none;
 }
