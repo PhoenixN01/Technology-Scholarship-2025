@@ -210,3 +210,30 @@ footer {
     outline: none;
     pointer-events: none;
 }
+
+.index-hero-nav {
+    margin: 0 auto;
+    position: relative;
+    bottom: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.indexButton .history{
+    bottom: 100px !important;
+    right: 50px !important;
+}
+
+.indexButton {
+    position: relative;
+    width: 255px;
+    height: 112px;
+    background-color: rgba(17, 84, 113, 1);
+    box-shadow: 5px 10px 4px rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+    font-family: 'lunasima', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 5px;
+    border: none;
+}
