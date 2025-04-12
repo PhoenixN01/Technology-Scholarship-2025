@@ -70,6 +70,8 @@ Promise.all([
     const earth = new THREE.Mesh(earthGeometry, earthMaterial);
     scene.add(earth);
 
+    earth.position.y = 0.5;
+
     /**
      * Sizes
      */
