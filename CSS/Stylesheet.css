@@ -48,7 +48,7 @@ header {
     position: relative;
     top: 115px;
     bottom: 0px;
-    left: 0;
+    left: 20px;
     width: 200px;
     height: 550px;
     background-color: #343a40;
@@ -139,9 +139,13 @@ main {
 
 .main-bg {
     width: 1500px;
-    height: 1024px;
+    height: auto;
     background-image: radial-gradient(rgba(64, 85, 144, 1) 0%, rgba(34, 46, 80, 1) 85%);
     display: block;
+}
+
+.index-bg {
+    height: 964px !important;
 }
 
 footer {
@@ -204,8 +208,7 @@ footer {
     color: rgba(179, 179, 179, 0.45);
 }
 
-.webgl
-{
+.webgl {
     margin: 0 auto;
     outline: none;
     pointer-events: none;
@@ -214,7 +217,7 @@ footer {
 .index-hero-nav {
     margin: 0 auto;
     position: relative;
-    bottom: 150px;
+    bottom: 200px;
     display: flex;
     justify-content: center;
 }
@@ -231,7 +234,7 @@ footer {
 
 .indexButton.Traditions {
     bottom: 100px;
-    width: 380px;
+    width: 450px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -251,7 +254,8 @@ footer {
 .indexButton {
     position: relative;
     height: 112px;
-    background-color: rgba(17, 84, 113, 1);
+    /* background-color: rgba(17, 84, 113, 1); */
+    background-color: #115471;
     box-shadow: 5px 10px 4px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     border: none;
@@ -260,7 +264,7 @@ footer {
 .HistoryLink {
     color: rgb(255, 255, 255);
     font-family: 'lunasima', sans-serif;
-    font-weight: bold;
+    font-weight: bolder;
     text-decoration: none;
 }
 
@@ -306,4 +310,52 @@ footer {
 .hover-underline:hover::after,
 .hover-underline:hover::before {
   transform: scaleX(1);
+}
+
+.History_MainContent {
+    margin: 50px auto;
+    width: 1500px;
+    display: flex;
+    justify-content: center;
+}
+
+.History-Content{
+    width: 750px;
+    height: 700px;
+    border-radius: 10px;
+    margin-right: 150px;
+    background-color: rgba(235, 235, 235, 1);
+    display: block;
+    text-align: center;
+}
+
+.History-img {
+    margin-right: 0;
+}
+
+.History-Content-Title {
+    width: 650px;
+    margin: 60px auto 0;
+    font-family: 'Josefin Sans';
+    font-size: 40px;
+    font-weight: bold;
+    align-self: center;
+}
+
+.History-Content-Content {
+    width: 650px;
+    margin: 50px auto 0;
+    font-family: 'Josefin Sans';
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.History-Content-Image {
+    margin: 50px auto 0;
+}
+
+.History-Timeline {
+    margin: 0 auto;
+    overflow: scroll;
 }
