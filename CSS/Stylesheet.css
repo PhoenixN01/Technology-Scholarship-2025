@@ -329,11 +329,11 @@ footer {
     text-align: center;
 }
 
-.History-img {
+#History-img {
     margin-right: 0;
 }
 
-.History-Content-Title {
+#History-Content-Title {
     width: 650px;
     margin: 60px auto 0;
     font-family: 'Josefin Sans';
@@ -342,7 +342,7 @@ footer {
     align-self: center;
 }
 
-.History-Content-Content {
+#History-Content-Main {
     width: 650px;
     margin: 50px auto 0;
     font-family: 'Josefin Sans';
@@ -351,11 +351,91 @@ footer {
     line-height: 1.2;
 }
 
-.History-Content-Image {
+#History-Content-Image {
     margin: 50px auto 0;
 }
 
-.History-Timeline {
+#History-Content-Image-Credit {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.History-Timeline-Container {
     margin: 0 auto;
+    padding: 120px 0;
     overflow: scroll;
+}
+
+.History-Timeline {
+    background-image: url("../Images/History_TimelinePattern.png");
+    width: 1810px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+}
+
+.Timeline-Item {
+    position: relative;
+    bottom: 72px;
+    text-align: center;
+}
+
+.Timeline-Item#Voyage {
+    right: 335px;
+}
+
+.Timeline-Item#Treaty {
+    right: 125px;
+}
+
+.Timeline-Item#LandWars {
+    left: 110px;
+}
+
+.Timeline-Item#MaoriParty {
+    left: 335px;
+}
+
+
+.TimelineButton {
+    height: 127px;
+    background-color: rgba(163, 163, 163, 1);
+    border-radius: 20px;
+    box-shadow: 0 4px 4px 10px rgba(0, 0, 0, 0.25);
+    font-family: 'Josefin Sans';
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+.TimelineButton#VoyageButton {
+    width: 294px;
+}
+
+.TimelineButton#TreatyButton {
+    width: 215px;
+}
+
+.TimelineButton#LandWarsButton {
+    width: 215px;
+}
+
+.TimelineButton#MaoriPartyButton {
+    width: 270px;
+}
+
+.Timeline-Date {
+    font-family: 'Josefin Sans';
+    font-size: 36px;
+    font-weight: bold;
+    color: rgba(180, 180, 180, 1);
+}
+
+.active-button {
+    background-color: rgba(235, 235, 235, 1) !important;
+}
+
+.active-date {
+    color: rgba(255, 255, 255, 1);
 }

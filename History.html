@@ -49,17 +49,43 @@
             <div class="main-bg">
                 <article class="History_MainContent">
                     <section class="History-Content">
-                        <h1 class="History-Content-Title">Voyage from Hawaiki to New Zealand</h1>
-                        <p class="History-Content-Content">
+                        <h1 id="History-Content-Title">Voyage from Hawaiki to New Zealand</h1>
+                        <p id="History-Content-Main">
                             Maori first arrived in New Zealand between 1250 and 1300 where they had navigated by star patterns and ocean currents to traverse the sea. 
                             They travelled using Waka (image below) that could carry as many as 12 up to 100 people depending on the size.
                         </p>
-                        <img class="History-Content-Image" src="Images/History_WakaImage.png" alt="Maori Waka Image">
+                        <img id="History-Content-Image" src="./Images/History_WakaImage.png" alt="Maori Waka Image">
+                        <p id="History-Content-Image-Credit">CC-BY-SA 3.0. https://handwiki.org/wiki/index.php?curid=1718020</p>
                     </section>
-                    <img class="History-img" src="Images/History_NZMap1.png" alt="New Zealand Map with landmarkers">
+                    <img id="History-Image" src="./Images/History_NZMap1.png" alt="New Zealand Map with landmarkers">
                 </article>
-                <div class="History-Timeline">
-                    <img class="Scrollable-timeline-bar" src="Images/History_TimelinePattern.png">
+                <div class="History-Timeline-Container">
+                    <section class="History-Timeline">
+                        <article class="Timeline-Item" id="Voyage">
+                            <p class="Timeline-Date active-date" id="VoyageDate">1250 - 1300</p>
+                            <button onclick="change('VoyageButton', 'VoyageDate')" class="TimelineButton active-button" id="VoyageButton">
+                                <h2>Maori Voyage from Hawaii to New Zealand</h2>
+                            </button>
+                        </article>
+                        <article class="Timeline-Item" id="Treaty">
+                            <p class="Timeline-Date" id="TreatyDate">1840</p>
+                            <button onclick="change('TreatyButton', 'TreatyDate')" class="TimelineButton" id="TreatyButton">
+                                <h2>Treaty of Waitangi Signed</h2>
+                            </button>
+                        </article>
+                        <article class="Timeline-Item" id="LandWars">
+                            <p class="Timeline-Date" id="LandWarsDate">1843 - 1870</p>
+                            <button onclick="change('LandWarsButton', 'LandWarsDate')" class="TimelineButton" id="LandWarsButton">
+                                <h2>Maori Land Wars</h2>
+                            </button>
+                        </article>
+                        <article class="Timeline-Item" id="MaoriParty">
+                            <p class="Timeline-Date" id="MaoriPartyDate">2004</p>
+                            <button onclick="change('MaoriPartyButton', 'MaoriPartyDate')" class="TimelineButton" id="MaoriPartyButton">
+                                <h2>Maori Political Party Formed</h2>
+                            </button>
+                        </article>
+                    </section>
                 </div>
             </div>
         </main>
@@ -81,6 +107,66 @@
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const voyageButton = document.getElementById('VoyageButton');
+        const treatyButton = document.getElementById('TreatyButton');
+        const landWarsButton = document.getElementById('LandWarsButton');
+        const partyButton = document.getElementById('MaoriPartyButton');
+        let buttonList = [voyageButton, treatyButton, landWarsButton, partyButton];
+
+        const voyageDate = document.getElementById('VoyageDate');
+        const treatyDate = document.getElementById('TreatyDate');
+        const landWarsDate = document.getElementById('LandWarsDate');
+        const partyDate = document.getElementById('MaoriPartyDate');
+        let dateList = [voyageDate, treatyDate, landWarsDate, partyDate];
+
+        const contentTitle = document.getElementById('History-Content-Title');
+        const contentMain = document.getElementById('History-Content-Main');
+        const contentImage = document.getElementById('History-Content-Image');
+        const contentImageCredit = document.getElementById('History-Content-Image-Credit');
+        const NZImage = document.getElementById('History-Image');
+        let contentTitleList = ["Voyage from Hawaiki to New Zealand", "The Signing of The Treaty Of Waitangi", "Land Wars between Maori and British", "The Creation of the Maori Political Party"];
+        let contentMainList = [
+            "Maori first arrived in New Zealand between 1250 and 1300 where they had navigated by star patterns and ocean currents to traverse the sea. They travelled using Waka (image below) that could carry as many as 12 up to 100 people depending on the size.",
+            "In 1840, a group of British Governors representing The Crown and Maori Chiefs gathered together to form and sign The Treaty of Waitangi / Te Tiriti o Waitangi. This treaty was created to allow british to buy land from the Maori in return for colonial items such as Muskets, Blankets, etc.", 
+            "Around 1843 - 1870, A series of wars over land rights happened between certain Maori Iwi and the British. These wars were generally caused by a disagreement between The Crown and Maori Iwi over the sale and ownership of land in New Zealand. This led to a loss of trust between The Crown and the Maori as these wars occured.", 
+            "In 2004, One of the Members of Parliament, Tariana Turia created the Maori Party as she disagreed with the decisions about seabed fishing and wanted to represent a party that upheld Maori Values during these decisions. This was supported by Maori across the country and led to the creation of the Official Party called: 'Te Pati Maori'"
+        ];
+        let contentImageList = ["Images/History_WakaImage.png", "Images/History_TreatyImage.png", "Images/History_WarsImage.png", "Images/History_ProtestImage.png"];
+        let contentImageMarginList = ["50px auto 0", "21.203px auto 0", "21.203px auto 0", "21.203px auto 0"];
+        let contentImageCreditList = [
+            "CC-BY-SA 3.0. https://handwiki.org/wiki/index.php?curid=1718020", 
+            "Archives New Zealand from New Zealand, CC BY-SA 2.0 <https://creativecommons.org/licenses/by-sa/2.0>, via Wikimedia Commons", 
+            "Archives New Zealand from New Zealand, CC BY-SA 2.0 <https://creativecommons.org/licenses/by-sa/2.0>, via Wikimedia Commons", 
+            "55a. Waitangi Day Hīkoi, Ōtepoti Dunedin, Aotearoa NZ, Tues. 6 Feb. 2024 (CC BY 4.0 - Photo by Mark McGuire)"
+        ];
+        let NZImageList = ["Images/History_NZMap1.png", "Images/History_NZMap2.png", "Images/History_NZMap3.png", "Images/History_NZMap4.png"];
+
+        function change(button, date) {
+            let selectedButton = document.querySelector(".active-button");
+            for (var i = 0; i < buttonList.length; i++) {
+                if (buttonList[i].classList.contains('active-button')) {
+                    buttonList[i].classList.remove('active-button');
+                    buttonList[i].style.pointerEvents = 'auto';
+                    dateList[i].classList.remove('active-date');
+                } else if (buttonList[i].id === button) {
+                    if (!buttonList[i].classList.contains('active-button')) {
+                        buttonList[i].classList.add('active-button');
+                        buttonList[i].style.pointerEvents = 'none';
+                        dateList[i].classList.add('active-date');
+                        contentTitle.innerHTML = contentTitleList[i];
+                        contentMain.innerHTML = contentMainList[i];
+                        contentImage.src = contentImageList[i];
+                        contentImage.style.margin = contentImageMarginList[i];
+                        contentImageCredit.innerHTML = contentImageCreditList[i];
+                        NZImage.src = NZImageList[i];
+                    }
+                } else {
+                    buttonList[i].style.pointerEvents = 'auto';
+                }
+            }
+        };
+    </script>
     <script>
         const dropdownButton = document.getElementById('dropdownMenuButton');
         const dropdownMenuContainer = document.getElementById('dropdownMenuContainer');
