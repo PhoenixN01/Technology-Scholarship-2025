@@ -150,17 +150,15 @@
                     buttonList[i].style.pointerEvents = 'auto';
                     dateList[i].classList.remove('active-date');
                 } else if (buttonList[i].id === button) {
-                    if (!buttonList[i].classList.contains('active-button')) {
-                        buttonList[i].classList.add('active-button');
-                        buttonList[i].style.pointerEvents = 'none';
-                        dateList[i].classList.add('active-date');
-                        contentTitle.innerHTML = contentTitleList[i];
-                        contentMain.innerHTML = contentMainList[i];
-                        contentImage.src = contentImageList[i];
-                        contentImage.style.margin = contentImageMarginList[i];
-                        contentImageCredit.innerHTML = contentImageCreditList[i];
-                        NZImage.src = NZImageList[i];
-                    }
+                    buttonList[i].classList.add('active-button');
+                    buttonList[i].style.pointerEvents = 'none';
+                    dateList[i].classList.add('active-date');
+                    contentTitle.innerHTML = contentTitleList[i];
+                    contentMain.innerHTML = contentMainList[i];
+                    contentImage.src = contentImageList[i];
+                    contentImage.style.margin = contentImageMarginList[i];
+                    contentImageCredit.innerHTML = contentImageCreditList[i];
+                    NZImage.src = NZImageList[i];
                 } else {
                     buttonList[i].style.pointerEvents = 'auto';
                 }
