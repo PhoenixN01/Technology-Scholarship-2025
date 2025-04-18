@@ -42,6 +42,7 @@ header {
 }
 
 /* Nav Bar Styling */
+
 .dropdown-menu-container {
     display: flex;
     visibility: hidden;
@@ -50,9 +51,9 @@ header {
     bottom: 0px;
     left: 20px;
     width: 200px;
-    height: 550px;
-    background-color: #343a40;
-    color: #ffffff;
+    height: 470px;
+    background-color: #115471;
+    border-radius: 0 0 15px 15px;
     z-index: 2;
     text-align: center;
     transform-origin: translate(0, -100%);
@@ -80,7 +81,7 @@ header {
 /* Positions navigation button relative to the header */
 .nav-btn {
     position: relative;
-    left: 50px;
+    left: 70px;
     background-color: transparent !important; /* Sets the button to be hidden so that the image appears to be the button */
     border: transparent !important;
 }
@@ -101,8 +102,8 @@ header {
     display: flex;
     justify-content: center;
     background-color: #115471;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .dropdown-menu-container .nav-link:hover {
@@ -117,7 +118,7 @@ header {
 
 /* Configures the div that holds the dividers in between each nav link */
 .dropdown-menu-container .nav-divider-container {
-    margin: 0, auto;
+    margin: 0 auto;
     width: 60px;
 }
 
@@ -230,6 +231,7 @@ footer {
     align-items: center;
     justify-content: center;
     font-size: 30px;
+
 }
 
 .indexButton.Traditions {
@@ -254,10 +256,9 @@ footer {
 .indexButton {
     position: relative;
     height: 112px;
-    /* background-color: rgba(17, 84, 113, 1); */
     background-color: #115471;
     box-shadow: 5px 10px 4px rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
+    border-radius: 8px;
     border: none;
 }
 
@@ -321,7 +322,7 @@ footer {
 
 .History-Content{
     width: 750px;
-    height: 700px;
+    height: 750px;
     border-radius: 10px;
     margin-right: 150px;
     background-color: rgba(235, 235, 235, 1);
@@ -342,9 +343,15 @@ footer {
     align-self: center;
 }
 
-#History-Content-Main {
+#History-Content-MainContainer {
+    margin: 0 auto;
     width: 650px;
-    margin: 50px auto 0;
+    height: 290px;
+    display: flex;
+}
+
+#History-Content-Main {
+    margin: auto;
     font-family: 'Josefin Sans';
     font-size: 24px;
     font-weight: bold;
@@ -352,7 +359,7 @@ footer {
 }
 
 #History-Content-Image {
-    margin: 50px auto 0;
+    margin: 0 auto;
 }
 
 #History-Content-Image-Credit {
@@ -367,7 +374,7 @@ footer {
 }
 
 .History-Timeline {
-    background-image: url("../Images/History_TimelinePattern.png");
+    background-image: url("../Images/History/History_TimelinePattern.png");
     width: 1810px;
     height: 130px;
     display: flex;
@@ -403,10 +410,10 @@ footer {
     border-radius: 20px;
     box-shadow: 0 4px 4px 10px rgba(0, 0, 0, 0.25);
     font-family: 'Josefin Sans';
-    font-size: 36px;
+    font-size: 32px;
     font-weight: bold;
     text-align: center;
-    text-decoration: none;
+    line-height: 1.2;   
 }
 
 .TimelineButton#VoyageButton {
