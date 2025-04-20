@@ -10,9 +10,7 @@
     <title>Maori Around The World</title>
     <style>
         /* change default margin from 8px to 0px for body */
-        body { margin: 0 auto; }
-
-        canvas { display: block; }
+        body {margin: 0 auto;}
     </style>
 </head>
 <body>
@@ -48,25 +46,58 @@
 
         <!-- Main Section -->
         <main>
-            <div class="main-bg index-bg">
-                <canvas class="webgl index"></canvas>
-                <script type="module" src="./Javascript/Index_Earth/script.js"></script>
-                <div class="index-hero-nav">
-                    <div class="indexButton History">
-                        <div class="hover-underline">
-                            <a class="HistoryLink" href="History.html">History</a>
-                        </div>
+            <div class="main-bg traditions-bg">
+                <div class="Traditions-Content-1">
+                    <div class="Traditions-Content-1-Background">
+                        <p class="Traditions-Content-1-Main">
+                            Maori Traditions have been passed down for centuries and resemble the values and morals that their ancestors carried with them. 
+                            This is a very special aspect of Maori Culture as it provides guidance for younger generations in how to act and be respectful in all situations.
+                        </p>
                     </div>
-                    <div class="indexButton Traditions">
-                        <div class="hover-underline">
-                            <a class="TraditionsLink" href="Traditions.html">Traditions and Importance</a>
-                        </div>
+                    <img class="Traditions-Content-1-Image" src="./Images/Traditions/Marae-Image.png" alt="Maori meeting at a traditional Maori House(Whare).">
+                </div>
+                <div class="Traditions-Content-2">
+                    <div class="Traditions-Content-2-MainContainer">
+                        <p class="Traditions-Content-2-MainContent">
+                            These traditions are seen in a variety of situations from important events on a Marae, gatherings to mourn those who have passed, or just general guidlines in everyday life.
+                        </p>
+                        <hr class="Traditions-Content-2-Divider">
                     </div>
-                    <div class="indexButton Connections">
-                        <div class="hover-underline">
-                            <a class="ConnectionsLink" href="#">Connections</a>
-                        </div>
+                    <div class="Traditions-Content-2-SubBackground">
+                        <p class="Traditions-Content-2-SubContent">
+                            Karakia (Prayer) is said before eating and before meetings / ceremonies.
+                        </p>
+                        <p class="Traditions-Content-2-SubContent">
+                            When leaving an Urupa (cemetery), Maori cleanse themselves with water to return to the land of the living.
+                        </p>
+                        <p class="Traditions-Content-2-SubContent">
+                            It is disrespectful to sit or place your feet on pillows and tables as it is where food and heads should go, not anything else.
+                        </p>
+                        <p class="Traditions-Content-2-SubContent">
+                            Shoes and hats must be removed upon entering Wharenui (main house).
+                        </p>
                     </div>
+                </div>
+                <div class="Traditions-Content-3">
+                    <p class="Traditions-Content-3-Whakatauki">
+                        “Ina kei te mohio koe ko wai koe, I anga mai koe I hea, kei te mohio koe, kei te anga atu ki hea”
+                    </p>
+                    <p class="Traditions-Content-3-Translation">
+                        - If you know who you are and where you are from, then you will know where you are going
+                    </p>
+                </div>
+                <div class="Traditions-Content-4">
+                    <div class="Traditions-Content-4-MainContainer">
+                        <img src="/Images/Traditions/Image-Collage-Left.png">
+                        <div class="Traditions-Content-4-MainCard">
+                            <p class="Traditions-Content-4-MainContent">
+                                Māori Culture celebrates the significance of all Polynesian cultures and their unique traditions. 
+                                Māori Culture also represents the visions of Māori and their ambitions for the future through their traditions.
+                            </p>
+                        </div>
+                        <img src="/Images/Traditions/Image-Collage-Right.png">
+                    </div>
+                    <img class="Traditions-Content-4-Pattern" src="/Images/Traditions/Koru-Pattern.png">
                 </div>
             </div>
         </main>
@@ -77,7 +108,7 @@
                 <p class="footer-contentDisclaimer">All media used is under the creative commons licensing</p>
                 <nav>
                     <ul class="nav">
-                        <li class="nav-item"><a class="nav-link active-page" href="Index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="History.html">History</a></li>
                         <li class="nav-item"><a class="nav-link" href="Traditions.html">Traditions and Importance</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Connections</a></li>
@@ -87,7 +118,7 @@
             </div>
         </footer>
     </div>
-    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         const dropdownButton = document.getElementById('dropdownMenuButton');
         const dropdownMenuContainer = document.getElementById('dropdownMenuContainer');

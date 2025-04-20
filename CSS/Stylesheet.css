@@ -149,6 +149,10 @@ main {
     height: 964px !important;
 }
 
+.traditions-bg {
+    height: 3030px !important;
+}
+
 footer {
     margin: 0 auto;
     position: relative;
@@ -314,7 +318,7 @@ footer {
 }
 
 .History_MainContent {
-    margin: 50px auto;
+    margin: 115px auto;
     width: 1500px;
     display: flex;
     justify-content: center;
@@ -374,7 +378,7 @@ footer {
 }
 
 .History-Timeline {
-    background-image: url("../Images/History/History_TimelinePattern.png");
+    background-image: url("/Images/History/History_TimelinePattern.png");
     width: 1810px;
     height: 130px;
     display: flex;
@@ -446,3 +450,171 @@ footer {
 .active-date {
     color: rgba(255, 255, 255, 1);
 }
+
+.Traditions-Content-1 {
+    margin: 175px auto 0;
+    width: 1500px;
+    display: flex;
+    justify-content: center;
+}
+
+.Traditions-Content-1-Background {
+    width: 803px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.315) 65%, rgba(0, 0, 0, 0) 100%);
+    opacity: 1;
+    z-index: 1;
+}
+
+.Traditions-Content-1-Main {
+    font-family: 'Josefin Sans';
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    width: 620px;
+    line-height: 1.2;
+    z-index: 4;
+    opacity: 1;
+}
+
+.Traditions-Content-1-Image {
+    margin-right: 0;
+}
+
+.Traditions-Content-2 {
+    width: 1500px;
+    height: auto;
+    margin: 150px auto 0;
+    display: flex;
+    justify-content: center;
+}
+
+.Traditions-Content-2-MainContainer {
+    width: 619px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.Traditions-Content-2-MainContent {
+    position: relative;
+    top: 70px;
+    margin: auto;
+    width: 440px;
+    font-family: 'Josefin Sans';
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+}
+
+.Traditions-Content-2-Divider {
+    position: relative;
+    bottom: 70px;
+    margin: auto;
+    width: 350px;
+    height: 6px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    opacity: 1;
+}
+
+.Traditions-Content-2-SubBackground {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 881px;
+    height: 800px;
+    background-image: linear-gradient(rgba(6, 93, 116, 0.9) 0%, rgba(6, 93, 116, 0.75) 25%, rgba(6, 93, 116, 0.5) 50%, rgba(6, 93, 116, 0.3) 75%);
+}
+
+.Traditions-Content-2-SubContent {
+    width: 589px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Josefin Sans';
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    vertical-align: middle;
+}
+
+.Traditions-Content-3 {
+    margin: 200px auto 0;
+    width: 1500px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(90deg, rgba(15, 73, 98, 1) 0%, rgba(23, 91, 120, 1) 20%, rgba(33, 111, 144, 1) 50%, rgba(23, 91, 120, 1) 80%, rgba(15, 73, 98, 1) 100%);
+}
+
+.Traditions-Content-3-Whakatauki {
+    width: 943px;
+    font-family: 'Josefin Sans';
+    font-size: 36px;
+    font-weight: bold;
+    color: rgba(235, 235, 235, 1);
+    text-align: center;
+}
+
+.Traditions-Content-3-Translation {
+    width: 745px;
+    font-family: 'Josefin Sans';
+    font-size: 24px;
+    font-weight: bold;
+    color: rgba(221, 221, 221, 0.85);
+    text-align: center;
+    line-height: 1.2;
+}
+
+.Traditions-Content-4 {
+    width: 1500px;
+    height: 845px;
+    margin: 200px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Traditions-Content-4-MainContainer {
+    width: 1500px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+}
+
+.Traditions-Content-4-MainCard {
+    width: 461px;
+    height: 517px;
+    background-image: url("/Images/Traditions/Content4-Background.png");
+    margin: 0 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Traditions-Content-4-MainContent {
+    width: 413px;
+    text-align: center;
+    font-family: 'Josefin Sans';
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.Traditions-Content-4-Pattern {
+    position: relative;
+    bottom: 150px;
+}
+
