@@ -37,7 +37,7 @@
                         <li class="nav-item"><div class="nav-divider-container"><hr class="nav-divider"></div></li>
                         <li class="nav-item"><a class="nav-link" href="#">Traditions and Importance</a></li>
                         <li class="nav-item"><div class="nav-divider-container"><hr class="nav-divider"></div></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Connections</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Connections.html">Connections</a></li>
                         <li class="nav-item"><div class="nav-spacer"></div></li>
                     </ul>
                 </div>
@@ -64,26 +64,26 @@
                 <div class="History-Timeline-Container">
                     <div class="History-Timeline">
                         <div class="Timeline-Item" id="Voyage">
-                            <p class="Timeline-Date active-date" id="VoyageDate">1250 - 1300</p>
-                            <button onclick="change('VoyageButton', 'VoyageDate')" class="TimelineButton active-button" id="VoyageButton">
+                            <p class="Timeline-Date active-date" id="VoyageDate">1250 - 1300 (AD)</p>
+                            <button onclick="change('VoyageButton', 'VoyageDate'); slide('left');" class="TimelineButton active-button" id="VoyageButton">
                                 Maori Voyage from Hawaii to New Zealand
                             </button>
                         </div>
                         <div class="Timeline-Item" id="Treaty">
                             <p class="Timeline-Date" id="TreatyDate">1840</p>
-                            <button onclick="change('TreatyButton', 'TreatyDate')" class="TimelineButton" id="TreatyButton">
+                            <button onclick="change('TreatyButton', 'TreatyDate'); slide('left');" class="TimelineButton" id="TreatyButton">
                                 Treaty of Waitangi Signed
                             </button>
                         </div>
                         <div class="Timeline-Item" id="LandWars">
                             <p class="Timeline-Date" id="LandWarsDate">1843 - 1870</p>
-                            <button onclick="change('LandWarsButton', 'LandWarsDate')" class="TimelineButton" id="LandWarsButton">
+                            <button onclick="change('LandWarsButton', 'LandWarsDate'); slide('right');" class="TimelineButton" id="LandWarsButton">
                                 Maori Land Wars
                             </button>
                         </div>
                         <div class="Timeline-Item" id="MaoriParty">
                             <p class="Timeline-Date" id="MaoriPartyDate">2004</p>
-                            <button onclick="change('MaoriPartyButton', 'MaoriPartyDate')" class="TimelineButton" id="MaoriPartyButton">
+                            <button onclick="change('MaoriPartyButton', 'MaoriPartyDate'); slide('right');" class="TimelineButton" id="MaoriPartyButton">
                                 Maori Political Party Formed
                             </button>
                         </div>
@@ -101,7 +101,7 @@
                         <li class="nav-item"><a class="nav-link" href="Index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link active-page" href="History.html">History</a></li>
                         <li class="nav-item"><a class="nav-link" href="Traditions.html">Traditions and Importance</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Connections</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Connections.html">Connections</a></li>
                     </ul>
                 </nav>
                 <p class="footer-watermark">Made By Phoenix Naera &copy;2025</p>
@@ -164,6 +164,24 @@
                 } else {
                     buttonList[i].style.pointerEvents = 'auto';
                 }
+            }
+        };
+    </script>
+    <script>
+        const timeline = document.querySelector(".History-Timeline-Container");
+
+        function slide(direction) {
+            const maxScroll = timeline.scrollWidth - timeline.clientWidth;
+            if (direction === 'right') {
+                timeline.scrollTo({
+                    left: maxScroll,
+                    behavior: 'smooth'
+                });
+            } else {
+                timeline.scrollTo({
+                    left: 0,
+                    behavior: 'smooth'
+                });
             }
         };
     </script>

@@ -213,9 +213,12 @@ footer {
     color: rgba(179, 179, 179, 0.45);
 }
 
-.webgl {
+.webgl{
     margin: 0 auto;
     outline: none;
+}
+
+.webgl.index {
     pointer-events: none;
 }
 
