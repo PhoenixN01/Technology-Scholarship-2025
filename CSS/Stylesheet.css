@@ -337,8 +337,10 @@ footer {
     text-align: center;
 }
 
-#History-img {
-    margin-right: 0;
+#History-Image {
+    width: 441px;
+    height: 631px;
+    margin: auto 0;
 }
 
 #History-Content-Title {
