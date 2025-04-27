@@ -25,7 +25,7 @@ header {
 }
 
 /* Formats the title text for the header */
-#header-title {
+#header-title-main {
     color: #ebebeb;
     width: 608px;
     position: relative;
@@ -34,6 +34,31 @@ header {
     font-family: 'Lunasima', sans-serif;
     font-weight: bold;
     font-size: 45px;
+}
+
+#header-title {
+    color: #ebebeb;
+    width: 608px;
+    position: relative;
+    left: 100px;
+    top: 5px;
+    text-align: center;
+    font-family: 'Lunasima', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#header-subtitle {
+    color: #ebebeb;
+    width: 608px;
+    position: relative;
+    left: 100px;
+    bottom: 5px;
+    text-align: center;
+    font-family: 'Lunasima', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    opacity: 0.85;
 }
 
 .header-pattern {
@@ -150,7 +175,11 @@ main {
 }
 
 .traditions-bg {
-    height: 3030px !important;
+    height: 3420px !important;
+}
+
+.connections-bg {
+    height: 1000px !important;
 }
 
 footer {
@@ -220,6 +249,11 @@ footer {
 
 .webgl.index {
     pointer-events: none;
+}
+
+.webgl.connections {
+    position: relative;
+    left: 350px;
 }
 
 .index-hero-nav {
@@ -322,6 +356,8 @@ footer {
 
 .History_MainContent {
     margin: 115px auto;
+    position: relative;
+    top: 50px;
     width: 1500px;
     display: flex;
     justify-content: center;
@@ -329,7 +365,7 @@ footer {
 
 .History-Content{
     width: 750px;
-    height: 750px;
+    height: 820px;
     border-radius: 10px;
     margin-right: 150px;
     background-color: rgba(235, 235, 235, 1);
@@ -347,8 +383,8 @@ footer {
     width: 650px;
     margin: 60px auto 0;
     font-family: 'Josefin Sans';
-    font-size: 40px;
-    font-weight: bold;
+    font-size: 46px;
+    font-weight: bolder;
     align-self: center;
 }
 
@@ -379,7 +415,7 @@ footer {
 .History-Timeline-Container {
     margin: 0 auto;
     padding: 120px 0;
-    overflow: scroll;
+    overflow-x: scroll;
 }
 
 .History-Timeline {
@@ -456,6 +492,10 @@ footer {
     color: rgba(255, 255, 255, 1);
 }
 
+.Traditions-Content-Divider {
+    margin: 60px auto 0;
+}
+
 .Traditions-Content-1 {
     margin: 175px auto 0;
     width: 1500px;
@@ -491,7 +531,7 @@ footer {
 .Traditions-Content-2 {
     width: 1500px;
     height: auto;
-    margin: 150px auto 0;
+    margin: 60px auto 0;
     display: flex;
     justify-content: center;
 }
@@ -553,7 +593,7 @@ footer {
 }
 
 .Traditions-Content-3 {
-    margin: 200px auto 0;
+    margin: 60px auto 0;
     width: 1500px;
     height: 220px;
     display: flex;
@@ -585,7 +625,7 @@ footer {
 .Traditions-Content-4 {
     width: 1500px;
     height: 845px;
-    margin: 200px auto 0;
+    margin: 150px auto 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -623,3 +663,72 @@ footer {
     bottom: 150px;
 }
 
+#tooltip {
+    position: absolute;
+    pointer-events: none;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.Connections-Content-Preview {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    left: 180px;
+    bottom: 800px;
+    width: 480px;
+    height: 550px;
+    background-color: rgba(0, 121, 145, 0.65);
+    border-radius: 10px;
+    z-index: 5;
+}
+
+.Connections-Content-Intro-Title {
+    margin: 50px auto 0;
+    text-align: center;
+    font-family: 'Josefin Sans';
+    font-size: 36px;
+    font-weight: bold;
+    color: rgba(235, 235, 235, 1);
+}
+
+.Connections-Content-Intro-Main {
+    margin: auto;
+    width: 420px;
+    font-family: 'Josefin Sans';
+    font-size: 26px;
+    font-weight: bold;
+    color: rgba(225, 225, 225, 1);
+    text-align: center;
+}
+
+.Gallery-Content-Container {
+    width: 500px;
+    height: 800px;
+    background: rgba(215, 215, 215, 1) !important;
+    border-radius: 10px !important;
+}
+
+.Gallery-Content-Title {
+    margin: 40px auto 0;
+    font-family: 'Josefin Sans';
+    font-size: 46px;
+    font-weight: bold;
+}
+
+.Gallerg-Content-Image {
+    height: 210px !important;
+}
+
+.Gallery-Content-Main {
+    margin: 20px auto 0;
+    font-family: 'Josefin Sans';
+    font-size: 24px;
+    font-weight: bold;
+}
