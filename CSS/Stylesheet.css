@@ -6,6 +6,9 @@
     margin: 0 auto;
 }
 
+
+/* Header Styling */
+
 /* Positions gradient container at the corner of the page with a fixed width, height, and a specified gradient pattern from the design process */
 .header-container {
     display: flex;
@@ -46,7 +49,7 @@
     font-size: 40px;
 }
 
-/*  */
+/* Subtitle for content pages */
 #header-subtitle {
     color: #ebebeb;
     width: 608px;
@@ -154,6 +157,10 @@
     opacity: 1;
 }
 
+
+/* Template / Main Styling for background and footer */
+
+/* formats the main tag in relation to the header */
 main {
     z-index: 1;
     display: flex;
@@ -162,6 +169,7 @@ main {
     overflow: hidden;
 }
 
+/* Formats the standard background for the pages */
 .main-bg {
     width: 1500px;
     height: auto;
@@ -169,18 +177,22 @@ main {
     display: block;
 }
 
+/* formats background specifically for index.html */
 .index-bg {
     height: 964px !important;
 }
 
+/* formats background specifically for traditions.html */
 .traditions-bg {
     height: 3420px !important;
 }
 
+/* formats background specifically for connections.html */
 .connections-bg {
     height: 1000px !important;
 }
 
+/*  */
 footer {
     margin: 0 auto;
     position: relative;
@@ -241,6 +253,9 @@ footer {
     color: rgba(179, 179, 179, 0.45);
 }
 
+
+/* Earth Styling */
+
 .webgl{
     margin: 0 auto;
     outline: none;
@@ -254,6 +269,9 @@ footer {
     position: relative;
     left: 350px;
 }
+
+
+/* Index.html Styling */
 
 .index-hero-nav {
     margin: 0 auto;
@@ -352,6 +370,9 @@ footer {
 .hover-underline:hover::before {
   transform: scaleX(1);
 }
+
+
+/* History.html Styling */
 
 .History_MainContent {
     margin: 115px auto;
@@ -490,6 +511,9 @@ footer {
 .active-date {
     color: rgba(255, 255, 255, 1);
 }
+
+
+/* Traditions.html Styling */
 
 .Traditions-Content-Divider {
     margin: 60px auto 0;
@@ -668,6 +692,9 @@ footer {
     position: relative;
     bottom: 150px;
 }
+
+
+/* Connections.html Styling */
 
 #tooltip {
     position: absolute;
