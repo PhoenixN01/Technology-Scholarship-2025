@@ -1,12 +1,9 @@
 
+/* Sets the max side for the screen */
 .max-width-div {
     width: 1500px;
     height: 1269px;
     margin: 0 auto;
-}
-
-header {
-    z-index: 2;
 }
 
 /* Positions gradient container at the corner of the page with a fixed width, height, and a specified gradient pattern from the design process */
@@ -24,7 +21,7 @@ header {
     z-index: 3;
 }
 
-/* Formats the title text for the header */
+/* Formats the title text for the header on the Index Page */
 #header-title-main {
     color: #ebebeb;
     width: 608px;
@@ -36,6 +33,7 @@ header {
     font-size: 45px;
 }
 
+/* Formats the Main Title for pages with a subtitle */
 #header-title {
     color: #ebebeb;
     width: 608px;
@@ -48,6 +46,7 @@ header {
     font-size: 40px;
 }
 
+/*  */
 #header-subtitle {
     color: #ebebeb;
     width: 608px;
@@ -496,6 +495,13 @@ footer {
     margin: 60px auto 0;
 }
 
+.Traditions-Content-Heading {
+    font-family: 'Josefin Sans';
+    font-size: 36px;
+    font-weight: bold;
+    color: rgba(235, 235, 235, 1);
+}
+
 .Traditions-Content-1 {
     margin: 175px auto 0;
     width: 1500px;
@@ -709,7 +715,7 @@ footer {
 }
 
 .Gallery-Content-Container {
-    width: 500px;
+    width: 500px !important;
     height: 800px;
     background: rgba(215, 215, 215, 1) !important;
     border-radius: 10px !important;
