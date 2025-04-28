@@ -7,7 +7,14 @@
 }
 
 
-/* Header Styling */
+
+/* 
+
+Header Styling 
+
+*/
+
+
 
 /* Positions gradient container at the corner of the page with a fixed width, height, and a specified gradient pattern from the design process */
 .header-container {
@@ -68,8 +75,17 @@
     left: 185px; /* moves pattern to right side of the header without intefering with the alignment of other items */
 }
 
-/* Nav Bar Styling */
 
+
+/* 
+
+Nav Bar Styling 
+
+*/
+
+
+
+/* formats the dropdown container for the nav */
 .dropdown-menu-container {
     display: flex;
     visibility: hidden;
@@ -83,8 +99,6 @@
     border-radius: 0 0 15px 15px;
     z-index: 2;
     text-align: center;
-    transform-origin: translate(0, -100%);
-    transform: 0;
 }
 
 /* Formats the text for the nav links */
@@ -98,7 +112,7 @@
 
 /* animate each nav link */
 .dropdown-menu-container .nav-link:hover {
-    transform: scale(105%);
+    transform: scale(1.05);
 }
 
 .dropdown-menu-container .nav-spacer {
@@ -158,7 +172,14 @@
 }
 
 
-/* Template / Main Styling for background and footer */
+
+/* 
+
+Template / Main Styling for background and footer 
+
+*/
+
+
 
 /* formats the main tag in relation to the header */
 main {
@@ -184,7 +205,7 @@ main {
 
 /* formats background specifically for traditions.html */
 .traditions-bg {
-    height: 3420px !important;
+    height: 3898px !important;
 }
 
 /* formats background specifically for connections.html */
@@ -192,7 +213,7 @@ main {
     height: 1000px !important;
 }
 
-/*  */
+/* Styles Footer tag as a template for footer items */
 footer {
     margin: 0 auto;
     position: relative;
@@ -200,6 +221,7 @@ footer {
     z-index: 1;
 }
 
+/* Formats the sizing of the footer container */
 .footer-container {
     display: flex;
     justify-content: center;
@@ -209,15 +231,18 @@ footer {
     background-color: rgb(26, 36, 62);
 }
 
+/* formats the footer nav position */
 .footer-container .nav {
     position: relative;
     right: 70px;
 }
 
+/* Formats footer nav items */
 .footer-container .nav-item {
     padding: 0px 20px;
 }
 
+/* Formats each of the links within the footer nav items */
 .footer-container .nav-link {
     font-family: 'Josefin Sans';
     font-size: 20px;
@@ -225,15 +250,18 @@ footer {
     color: rgba(214, 214, 214, 0.85);
 }
 
+/* Formats footer effects */
 .footer-container .nav-link:hover {
     color: rgba(255, 255, 255, 1);
 }
 
+/* Formats footer effects */
 .footer-container .active-page {
     color: rgba(255, 255, 255, 1) !important;
     pointer-events: none;
 }
 
+/* Formats footer watermark */
 .footer-watermark {
     font-family: 'Josefin Sans';
     font-size: 20px;
@@ -243,6 +271,7 @@ footer {
     top: 60px;
 }
 
+/* Formats footer content disclaimer */
 .footer-contentDisclaimer {
     position: relative;
     top: 60px;
@@ -254,25 +283,39 @@ footer {
 }
 
 
-/* Earth Styling */
+/* 
+Earth Styling 
+*/
 
+
+/* Formats the template webgl canvas for the earth model */
 .webgl{
     margin: 0 auto;
     outline: none;
 }
 
+/* formats index.html canvas to make the earth static */
 .webgl.index {
     pointer-events: none;
 }
 
+/* formats connections.html canvas positioning */
 .webgl.connections {
     position: relative;
     left: 350px;
 }
 
 
-/* Index.html Styling */
 
+/* 
+
+Index.html Styling 
+
+*/
+
+
+
+/* formats the index nav */
 .index-hero-nav {
     margin: 0 auto;
     position: relative;
@@ -281,6 +324,7 @@ footer {
     justify-content: center;
 }
 
+/* Formats History index nav button */
 .indexButton.History {
     bottom: 250px;
     right: 150px;
@@ -292,6 +336,7 @@ footer {
 
 }
 
+/* Formats Traditions index nav button */
 .indexButton.Traditions {
     bottom: 100px;
     width: 450px;
@@ -301,6 +346,7 @@ footer {
     font-size: 28px;
 }
 
+/* Formats Connections index nav button */
 .indexButton.Connections {
     bottom: 250px;
     left: 150px;
@@ -311,6 +357,7 @@ footer {
     font-size: 30px;
 }
 
+/* Formats standard index nav button */
 .indexButton {
     position: relative;
     height: 112px;
@@ -320,6 +367,7 @@ footer {
     border: none;
 }
 
+/* formats the History link in its nav button */
 .HistoryLink {
     color: rgb(255, 255, 255);
     font-family: 'lunasima', sans-serif;
@@ -327,6 +375,7 @@ footer {
     text-decoration: none;
 }
 
+/* formats the Traditions link in its nav button */
 .TraditionsLink {
     color: rgb(255, 255, 255);
     font-family: 'lunasima', sans-serif;
@@ -334,6 +383,7 @@ footer {
     text-decoration: none;
 }
 
+/* formats the Connections link in its nav button */
 .ConnectionsLink {
     color: rgb(255, 255, 255);
     font-family: 'lunasima', sans-serif;
@@ -341,12 +391,14 @@ footer {
     text-decoration: none;
 }
 
+/* formats the hover effect for each nav link */
 .hover-underline {
     color: #ffffff;
     position: relative;
     display: inline-block;
 }
 
+/* hover effects continued */
 .hover-underline::after,
 .hover-underline::before {
   content: '';
@@ -361,20 +413,30 @@ footer {
   transition: transform 0.4s ease-out;
 }
 
+/* hover effects continued */
 .hover-underline::before {
   top: -5px;
   transform-origin: left;
 }
 
+/* hover effects continued */
 .hover-underline:hover::after,
 .hover-underline:hover::before {
   transform: scaleX(1);
 }
 
 
-/* History.html Styling */
 
-.History_MainContent {
+/* 
+
+History.html Styling 
+
+*/
+
+
+
+/* Formats the main content for history.html */
+#History_MainContent {
     margin: 115px auto;
     position: relative;
     top: 50px;
@@ -383,7 +445,8 @@ footer {
     justify-content: center;
 }
 
-.History-Content{
+/* Formats the content card in the History main section */
+#History-Content{
     width: 750px;
     height: 820px;
     border-radius: 10px;
@@ -393,12 +456,14 @@ footer {
     text-align: center;
 }
 
+/* Formats the NZ Map Image for the main content */
 #History-Image {
     width: 441px;
     height: 631px;
     margin: auto 0;
 }
 
+/* Formats the title in the history main content card  */
 #History-Content-Title {
     width: 650px;
     margin: 60px auto 0;
@@ -408,6 +473,7 @@ footer {
     align-self: center;
 }
 
+/* Formats the container for the history main content card */
 #History-Content-MainContainer {
     margin: 0 auto;
     width: 650px;
@@ -415,6 +481,7 @@ footer {
     display: flex;
 }
 
+/* formats the body text for the history main content card */
 #History-Content-Main {
     margin: auto;
     font-family: 'Josefin Sans';
@@ -423,22 +490,26 @@ footer {
     line-height: 1.2;
 }
 
+/* formats the image that sits inside the history main content card */
 #History-Content-Image {
     margin: 0 auto;
 }
 
+/* formats the attribution line that sits under the content image */
 #History-Content-Image-Credit {
     font-size: 14px;
     color: rgba(0, 0, 0, 0.7);
 }
 
-.History-Timeline-Container {
+/* formats the container of the History Timeline */
+#History-Timeline-Container {
     margin: 0 auto;
     padding: 120px 0;
     overflow-x: scroll;
 }
 
-.History-Timeline {
+/* Formats the timeline that holds each timeline item */
+#History-Timeline {
     background-image: url("/Images/History/History_TimelinePattern.png");
     width: 1810px;
     height: 130px;
@@ -446,29 +517,34 @@ footer {
     justify-content: center;
 }
 
+/* Formats each timeline item that sits on the timeline */
 .Timeline-Item {
     position: relative;
     bottom: 72px;
     text-align: center;
 }
 
+/* Formats specific positioning for the Voyage container */
 .Timeline-Item#Voyage {
     right: 335px;
 }
 
+/* Formats specific positioning for the Treaty container */
 .Timeline-Item#Treaty {
     right: 125px;
 }
 
+/* Formats specific positioning for the Land Wars container */
 .Timeline-Item#LandWars {
     left: 110px;
 }
 
-.Timeline-Item#MaoriParty {
+/* Formats specific positioning for the Māori Party container */
+.Timeline-Item#MāoriParty {
     left: 335px;
 }
 
-
+/* Formats the buttons that sit inside each timeline section */
 .TimelineButton {
     height: 127px;
     background-color: rgba(163, 163, 163, 1);
@@ -481,22 +557,27 @@ footer {
     line-height: 1.2;   
 }
 
+/* formats specific sizing for the Voyage Button */
 .TimelineButton#VoyageButton {
     width: 294px;
 }
 
+/* formats specific sizing for the Treaty Button */
 .TimelineButton#TreatyButton {
     width: 215px;
 }
 
+/* formats specific sizing for the Land Wars Button */
 .TimelineButton#LandWarsButton {
     width: 215px;
 }
 
-.TimelineButton#MaoriPartyButton {
+/* formats specific sizing for the Māori Party Button */
+.TimelineButton#MāoriPartyButton {
     width: 270px;
 }
 
+/* formats the Timeline dates */
 .Timeline-Date {
     font-family: 'Josefin Sans';
     font-size: 36px;
@@ -504,36 +585,70 @@ footer {
     color: rgba(180, 180, 180, 1);
 }
 
+/* formats specific effects for the selected button */
 .active-button {
     background-color: rgba(235, 235, 235, 1) !important;
 }
 
+/* formats specific effects for the selected date */
 .active-date {
     color: rgba(255, 255, 255, 1);
 }
 
 
-/* Traditions.html Styling */
 
+/* 
+
+Traditions.html Styling 
+
+*/
+
+
+
+/* Formats the Kowhaiwhai patterns that split up the content into defined sections */
 .Traditions-Content-Divider {
     margin: 60px auto 0;
 }
 
+/* Formats the headings for each section of content */
 .Traditions-Content-Heading {
     font-family: 'Josefin Sans';
-    font-size: 36px;
+    font-size: 50px;
     font-weight: bold;
     color: rgba(235, 235, 235, 1);
+    text-align: center;
 }
 
-.Traditions-Content-1 {
-    margin: 175px auto 0;
+/* Formats specific margins for the 1st heading */
+#Traditions-Heading1 {
+    margin: 205px auto 40px;
+}
+
+/* Formats specific margins for the 2nd heading */
+#Traditions-Heading2 {
+    margin: 80px auto 60px;
+}
+
+/* Formats specific margins for the 3rd heading */
+#Traditions-Heading3 {
+    margin: 50px auto 30px;
+}
+
+/* Formats specific margins for the 4th heading */
+#Traditions-Heading4 {
+    margin: 100px auto 30px;
+}
+
+/* Formats the 1st section of content */
+#Traditions-Content-1 {
+    margin: 0 auto;
     width: 1500px;
     display: flex;
     justify-content: center;
 }
 
-.Traditions-Content-1-Background {
+/* Formats the background shading for the 1st content section */
+#Traditions-Content-1-Background {
     width: 803px;
     display: flex;
     justify-content: center;
@@ -543,7 +658,8 @@ footer {
     z-index: 1;
 }
 
-.Traditions-Content-1-Main {
+/* Formats the body text for the 1st content section */
+#Traditions-Content-1-Main {
     font-family: 'Josefin Sans';
     font-size: 40px;
     font-weight: bold;
@@ -554,19 +670,22 @@ footer {
     opacity: 1;
 }
 
-.Traditions-Content-1-Image {
+/* Formats the image for the 1st content section */
+#Traditions-Content-1-Image {
     margin-right: 0;
 }
 
-.Traditions-Content-2 {
+/* Formats the 2nd section of content */
+#Traditions-Content-2 {
     width: 1500px;
     height: auto;
-    margin: 60px auto 0;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
 }
 
-.Traditions-Content-2-MainContainer {
+/* Formats the main section in the 2nd section of content */
+#Traditions-Content-2-MainContainer {
     width: 619px;
     height: 800px;
     display: flex;
@@ -575,7 +694,8 @@ footer {
     flex-direction: column; 
 }
 
-.Traditions-Content-2-MainContent {
+/* Formats the main content that sits to the left of the 2nd section of content */
+#Traditions-Content-2-MainContent {
     position: relative;
     top: 70px;
     margin: auto;
@@ -588,7 +708,8 @@ footer {
     text-align: center;
 }
 
-.Traditions-Content-2-Divider {
+/* Formats the divider that sits beneath the main content */
+#Traditions-Content-2-Divider {
     position: relative;
     bottom: 70px;
     margin: auto;
@@ -599,7 +720,8 @@ footer {
     opacity: 1;
 }
 
-.Traditions-Content-2-SubBackground {
+/* Formats the background for the subcontent on the right of the 2nd content section */
+#Traditions-Content-2-SubBackground {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -609,6 +731,7 @@ footer {
     background-image: linear-gradient(rgba(6, 93, 116, 0.9) 0%, rgba(6, 93, 116, 0.75) 25%, rgba(6, 93, 116, 0.5) 50%, rgba(6, 93, 116, 0.3) 75%);
 }
 
+/* Formating the subcontents on the right side of the 2nd content section */
 .Traditions-Content-2-SubContent {
     width: 589px;
     padding-top: 20px;
@@ -622,7 +745,8 @@ footer {
     vertical-align: middle;
 }
 
-.Traditions-Content-3 {
+/* Formating the container for the 3rd content section */
+#Traditions-Content-3 {
     margin: 60px auto 0;
     width: 1500px;
     height: 220px;
@@ -633,7 +757,8 @@ footer {
     background-image: linear-gradient(90deg, rgba(15, 73, 98, 1) 0%, rgba(23, 91, 120, 1) 20%, rgba(33, 111, 144, 1) 50%, rgba(23, 91, 120, 1) 80%, rgba(15, 73, 98, 1) 100%);
 }
 
-.Traditions-Content-3-Whakatauki {
+/* Formats the Māori Portion of the 3rd content section */
+#Traditions-Content-3-Whakatauki {
     width: 943px;
     font-family: 'Josefin Sans';
     font-size: 36px;
@@ -642,7 +767,8 @@ footer {
     text-align: center;
 }
 
-.Traditions-Content-3-Translation {
+/* Formats the english translation of the 3rd content section */
+#Traditions-Content-3-Translation {
     width: 745px;
     font-family: 'Josefin Sans';
     font-size: 24px;
@@ -652,7 +778,8 @@ footer {
     line-height: 1.2;
 }
 
-.Traditions-Content-4 {
+/* Formats the containre for the 4th content section */
+#Traditions-Content-4 {
     width: 1500px;
     height: 845px;
     margin: 150px auto 0;
@@ -662,14 +789,16 @@ footer {
     flex-direction: column;
 }
 
-.Traditions-Content-4-MainContainer {
+/* Formats the container for the main content section (middle) for the 4th content section */
+#Traditions-Content-4-MainContainer {
     width: 1500px;
     height: 700px;
     display: flex;
     justify-content: center;
 }
 
-.Traditions-Content-4-MainCard {
+/* Formats the background for the 4th content section  */
+#Traditions-Content-4-MainCard {
     width: 461px;
     height: 517px;
     background-image: url("/Images/Traditions/Content4-Background.png");
@@ -679,7 +808,8 @@ footer {
     align-items: center;
 }
 
-.Traditions-Content-4-MainContent {
+/* Formats the Main content for the 4th content section */
+#Traditions-Content-4-MainContent {
     width: 413px;
     text-align: center;
     font-family: 'Josefin Sans';
@@ -688,14 +818,23 @@ footer {
     line-height: 1.2;
 }
 
-.Traditions-Content-4-Pattern {
+/* Formats the pattern at the bottom of the 4th content section */
+#Traditions-Content-4-Pattern {
     position: relative;
     bottom: 150px;
 }
 
 
-/* Connections.html Styling */
 
+/* 
+
+Connections.html Styling 
+
+*/
+
+
+
+/* Formats the tooltip that shows next to the mouse upon hover on a marker */
 #tooltip {
     position: absolute;
     pointer-events: none;
@@ -708,7 +847,8 @@ footer {
     white-space: nowrap;
 }
 
-.Connections-Content-Preview {
+/* Formats the Intro container for the Connections Page */
+.Connections-Content-Intro {
     position: relative;
     display: flex;
     justify-content: center;
@@ -722,6 +862,7 @@ footer {
     z-index: 5;
 }
 
+/* Formats the title for the Connections Intro  */
 .Connections-Content-Intro-Title {
     margin: 50px auto 0;
     text-align: center;
@@ -731,6 +872,7 @@ footer {
     color: rgba(235, 235, 235, 1);
 }
 
+/* Formatst the body for the Connections Intro */
 .Connections-Content-Intro-Main {
     margin: auto;
     width: 420px;
@@ -741,13 +883,18 @@ footer {
     text-align: center;
 }
 
-.Gallery-Content-Container {
-    width: 500px !important;
+/* Formats the gallery cards */
+.Gallery-Content-Card {
+    width: 1000px !important;
     height: 800px;
     background: rgba(215, 215, 215, 1) !important;
     border-radius: 10px !important;
+    display: flex;
+    justify-content: center !important;
+    flex-direction: row !important;
 }
 
+/* Formats the title of each gallery card */
 .Gallery-Content-Title {
     margin: 40px auto 0;
     font-family: 'Josefin Sans';
@@ -755,13 +902,61 @@ footer {
     font-weight: bold;
 }
 
-.Gallerg-Content-Image {
+/* Formats the Main Content of the gallery cards */
+.Gallery-Content-Main {
+    margin: auto;
+    margin-left: 0 !important;
+    width: 400px !important;
+    height: 728px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Formats the Sub Content containing images in the gallery cards */
+.Gallery-Content-Subcontent {
+    margin: auto 0;
+    width: 450px;
+    margin-right: 0;
+    vertical-align: middle;
+}
+
+/* Ensures that each flag isn't being resized  */
+.Gallery-Content-Image {
+    margin: 0 auto;
     height: 210px !important;
 }
 
-.Gallery-Content-Main {
+/* Ensures that NZ Flag is properly sized */
+#NZ-Gallery-Flag {
+    width: 420px !important;
+}
+
+/* Ensures that Japan Flag is properly sized */
+#Japan-Gallery-Flag {
+    width: 350px !important;
+}
+
+/* Ensures that Mexico Flag is properly sized */
+#Mexico-Gallery-Flag {
+    width: 367px !important;
+}
+
+/* Ensures that Scotland Flag is properly sized */
+#Scotland-Gallery-Flag {
+    width: 350px !important;
+}
+
+/* Ensures that China Flag is properly sized */
+#China-Gallery-Flag {
+    width: 315px !important;
+}
+
+/* Format the body content for each gallery card */
+.Gallery-Content-MainContent {
     margin: 20px auto 0;
     font-family: 'Josefin Sans';
     font-size: 24px;
     font-weight: bold;
+    text-align: justify;
 }

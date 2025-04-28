@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lunasima&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Josefin%20Sans' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>Maori Around The World</title>
+    <title>Māori Around The World</title>
     <style>
         /* change default margin from 8px to 0px for body */
         body {margin: 0 auto;}
@@ -20,12 +20,12 @@
         <header>
             <div class="header-container">
                 <!-- Dropdown Button -->
-                <button class="btn btn-primary nav-btn" type="button" id="dropdownMenuButton" >
-                    <img alt="Open/Close Navigation" class="header-nav-icon" src="./Images/Header-Nav/Nav-icon.png">
+                <button class="btn btn-primary nav-btn" type="button" id="dropdownMenuButton" aria-label="Open/Close Navigation">
+                    <img alt="Open/Close Navigation Icon" class="header-nav-icon" src="./Images/Header-Nav/Nav-icon.png">
                 </button>
                 <div>
                     <h1 id="header-title">Māori Around The World</h1>
-                    <h2 id="header-subtitle">Importance and Traditions of Te Ao Maori</h2>
+                    <h2 id="header-subtitle">Importance and Traditions of Te Ao Māori</h2>
                 </div>
                 <img class="header-pattern" src="./Images/Header-Nav/Header-pattern.png" alt="Header Triangle Pattern">
             </div>
@@ -50,65 +50,80 @@
         <!-- Main Section -->
         <main>
             <div class="main-bg traditions-bg">
-                <h2 class="Traditions-Content-Heading"></h2>
-                <div class="Traditions-Content-1">
-                    <div class="Traditions-Content-1-Background">
-                        <p class="Traditions-Content-1-Main">
-                            Maori Traditions have been passed down for centuries and resemble the values and morals that their ancestors carried with them. 
-                            This is a very special aspect of Maori Culture as it provides guidance for younger generations in how to act and be respectful in all situations.
-                        </p>
-                    </div>
-                    <img class="Traditions-Content-1-Image" src="./Images/Traditions/Marae-Image.png" alt="Maori meeting at a traditional Maori House(Whare).">
-                </div>
-                <img class="Traditions-Content-Divider" src="/Images/Traditions/Kowhaiwhai-Pattern1.png" alt="Maori Pattern Design">
-                <h2 class="Traditions-Content-Heading">Maori Traditions</h2>
-                <div class="Traditions-Content-2">
-                    <div class="Traditions-Content-2-MainContainer">
-                        <p class="Traditions-Content-2-MainContent">
-                            These traditions are seen in a variety of situations from important events on a Marae, gatherings to mourn those who have passed, or just general guidelines in everyday life.
-                        </p>
-                        <hr class="Traditions-Content-2-Divider">
-                    </div>
-                    <div class="Traditions-Content-2-SubBackground">
-                        <p class="Traditions-Content-2-SubContent">
-                            Karakia (Prayer) is said before eating and before meetings / ceremonies.
-                        </p>
-                        <p class="Traditions-Content-2-SubContent">
-                            When leaving an Urupa (cemetery), Maori cleanse themselves with water to return to the land of the living.
-                        </p>
-                        <p class="Traditions-Content-2-SubContent">
-                            It is disrespectful to sit or place your feet on pillows and tables as it is where food and heads should go, not anything else.
-                        </p>
-                        <p class="Traditions-Content-2-SubContent">
-                            Shoes and hats must be removed upon entering Wharenui (main house).
-                        </p>
-                    </div>
-                </div>
-                <img class="Traditions-Content-Divider" src="/Images/Traditions/Kowhaiwhai-Pattern3.png" alt="Maori Pattern Design">
-                <h2 class="Traditions-Content-Heading"></h2>
-                <div class="Traditions-Content-3">
-                    <p class="Traditions-Content-3-Whakatauki">
-                        “Ina kei te mohio koe ko wai koe, I anga mai koe I hea, kei te mohio koe, kei te anga atu ki hea”
-                    </p>
-                    <p class="Traditions-Content-3-Translation">
-                        - If you know who you are and where you are from, then you will know where you are going
-                    </p>
-                </div>
-                <img class="Traditions-Content-Divider" src="/Images/Traditions/Kowhaiwhai-Pattern3.png" alt="Maori Pattern Design">
-                <h2 class="Traditions-Content-Heading"></h2>
-                <div class="Traditions-Content-4">
-                    <div class="Traditions-Content-4-MainContainer">
-                        <img src="/Images/Traditions/Image-Collage-Left.png" alt="Polynesian performers">
-                        <div class="Traditions-Content-4-MainCard">
-                            <p class="Traditions-Content-4-MainContent">
-                                Māori Culture celebrates the significance of all Polynesian cultures and their unique traditions. 
-                                Māori Culture also represents the visions of Māori and their ambitions for the future through their traditions.
+                <!-- Introduction -->
+                <article>
+                    <h2 class="Traditions-Content-Heading" id="Traditions-Heading1">Māori Traditions Introduction</h2>
+                    <div id="Traditions-Content-1">
+                        <div id="Traditions-Content-1-Background">
+                            <p id="Traditions-Content-1-Main">
+                                Māori Traditions have been passed down for centuries and resemble the values and morals that their ancestors carried with them. 
+                                This is a very special aspect of Māori Culture as it provides guidance for younger generations in how to act and be respectful in all situations.
                             </p>
                         </div>
-                        <img src="/Images/Traditions/Image-Collage-Right.png" alt="Polynesian performers">
+                        <img id="Traditions-Content-1-Image" src="./Images/Traditions/Marae-Image.png" alt="Māori meeting at a traditional Māori House(Whare).">
                     </div>
-                    <img class="Traditions-Content-4-Pattern" src="/Images/Traditions/Koru-Pattern.png" alt="Maori Pattern">
-                </div>
+                    <img class="Traditions-Content-Divider" src="/Images/Traditions/Kowhaiwhai-Pattern1.png" alt="Māori Pattern Design">
+                </article>
+
+                <!-- Examples of Māori Traditions -->
+                <article>
+                    <h2 class="Traditions-Content-Heading" id="Traditions-Heading2">Māori Traditions Examples</h2>
+                    <div id="Traditions-Content-2">
+                        <div id="Traditions-Content-2-MainContainer">
+                            <p id="Traditions-Content-2-MainContent">
+                                These traditions are seen in a variety of situations from important events on a Marae, gatherings to mourn those who have passed, or just general guidelines in everyday life.
+                            </p>
+                            <hr id="Traditions-Content-2-Divider">
+                        </div>
+                        <div id="Traditions-Content-2-SubBackground">
+                            <p class="Traditions-Content-2-SubContent">
+                                Karakia (Prayer) is said before eating and before meetings / ceremonies.
+                            </p>
+                            <p class="Traditions-Content-2-SubContent">
+                                When leaving an Urupa (cemetery), Māori cleanse themselves with water to return to the land of the living.
+                            </p>
+                            <p class="Traditions-Content-2-SubContent">
+                                It is disrespectful to sit or place your feet on pillows and tables as it is where food and heads should go, not anything else.
+                            </p>
+                            <p class="Traditions-Content-2-SubContent">
+                                Shoes and hats must be removed upon entering Wharenui (main house).
+                            </p>
+                        </div>
+                    </div>
+                    <img class="Traditions-Content-Divider" src="/Images/Traditions/Kowhaiwhai-Pattern3.png" alt="Māori Pattern Design">
+                </article>
+
+                <!-- Whakatauki Section -->
+                <article>
+                    <h2 class="Traditions-Content-Heading" id="Traditions-Heading3">Māori Whakatauki</h2>
+                    <div id="Traditions-Content-3">
+                        <p id="Traditions-Content-3-Whakatauki">
+                            “Ina kei te mohio koe ko wai koe, I anga mai koe I hea, kei te mohio koe, kei te anga atu ki hea”
+                        </p>
+                        <p id="Traditions-Content-3-Translation">
+                            - If you know who you are and where you are from, then you will know where you are going
+                        </p>
+                    </div>
+                    <img class="Traditions-Content-Divider" src="/Images/Traditions/Kowhaiwhai-Pattern3.png" alt="Māori Pattern Design">
+                </article>
+
+                <!-- Importance of Māori Culture -->
+                <article>
+                    <h2 class="Traditions-Content-Heading" id="Traditions-Heading4">Māori Importance</h2>
+                    <div id="Traditions-Content-4">
+                        <div id="Traditions-Content-4-MainContainer">
+                            <img src="/Images/Traditions/Image-Collage-Left.png" alt="Polynesian performers">
+                            <div id="Traditions-Content-4-MainCard">
+                                <p id="Traditions-Content-4-MainContent">
+                                    Māori Culture celebrates the significance of all Polynesian cultures and their unique traditions. 
+                                    Māori Culture also represents the visions of Māori and their ambitions for the future through their traditions.
+                                </p>
+                            </div>
+                            <img src="/Images/Traditions/Image-Collage-Right.png" alt="Polynesian performers">
+                        </div>
+                        <img id="Traditions-Content-4-Pattern" src="/Images/Traditions/Koru-Pattern.png" alt="Māori Pattern">
+                    </div>
+                </article>
             </div>
         </main>
 

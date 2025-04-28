@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lunasima&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Josefin%20Sans' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>Maori Around The World</title>
+    <title>Māori Around The World</title>
     <style>
         /* change default margin from 8px to 0px for body */
         body {margin: 0 auto;}
@@ -20,12 +20,13 @@
         <header>
             <div class="header-container">
                 <!-- Dropdown Button -->
-                <button class="btn btn-primary nav-btn" type="button" id="dropdownMenuButton" >
-                    <img alt="Open/Close Navigation" class="header-nav-icon" src="./Images/Header-Nav/Nav-icon.png">
+                <button class="btn btn-primary nav-btn" type="button" id="dropdownMenuButton" aria-label="Open/Close Navigation">
+                    <img alt="Open/Close Navigation Icon" class="header-nav-icon" src="./Images/Header-Nav/Nav-icon.png">
                 </button>
+                <!-- Title, Subtitle & Header Pattern -->
                 <div>
                     <h1 id="header-title">Māori Around The World</h1>
-                    <h2 id="header-subtitle">History of Te Ao Maori</h2>
+                    <h2 id="header-subtitle">History of Te Ao Māori</h2>
                 </div>
                 <img class="header-pattern" src="./Images/Header-Nav/Header-pattern.png" alt="Header Triangle Pattern">
             </div>
@@ -49,27 +50,28 @@
 
         <!-- Main Section -->
         <main>
+            <!-- Background -->
             <div class="main-bg">
-                <div class="History_MainContent">
-                    <article class="History-Content">
+                <div id="History_MainContent">
+                    <article id="History-Content">
                         <h2 id="History-Content-Title">Voyage from Hawaiki to New Zealand</h2>
                         <div id="History-Content-MainContainer">
                             <p id="History-Content-Main">
-                            Maori first arrived in New Zealand between 1250 and 1300 where they had navigated by star patterns and ocean currents to traverse the sea. 
+                            Māori first arrived in New Zealand between 1250 and 1300 where they had navigated by star patterns and ocean currents to traverse the sea. 
                             They travelled using Waka (image below) that could carry as many as 12 up to 100 people depending on the size.
                             </p>
                         </div>
-                        <img id="History-Content-Image" src="./Images/History/ContentImages/History_WakaImage.png" alt="Maori Waka Image">
+                        <img id="History-Content-Image" src="./Images/History/ContentImages/History_WakaImage.png" alt="Māori Waka Image">
                         <p id="History-Content-Image-Credit">CC-BY-SA 3.0. https://handwiki.org/wiki/index.php?curid=1718020</p>
                     </article>
                     <img id="History-Image" src="./Images/History/NZMaps/History_NZMap1.png" alt="New Zealand Map with landmarkers">
                 </div>
-                <div class="History-Timeline-Container">
-                    <div class="History-Timeline">
+                <div id="History-Timeline-Container">
+                    <div id="History-Timeline">
                         <div class="Timeline-Item" id="Voyage">
                             <p class="Timeline-Date active-date" id="VoyageDate">1250 - 1300 (AD)</p>
                             <button onclick="change('VoyageButton', 'VoyageDate'); slide('left');" class="TimelineButton active-button" id="VoyageButton">
-                                Maori Voyage from Hawaiki to New Zealand
+                                Māori Voyage from Hawaiki to New Zealand
                             </button>
                         </div>
                         <div class="Timeline-Item" id="Treaty">
@@ -81,13 +83,13 @@
                         <div class="Timeline-Item" id="LandWars">
                             <p class="Timeline-Date" id="LandWarsDate">1843 - 1870</p>
                             <button onclick="change('LandWarsButton', 'LandWarsDate'); slide('right');" class="TimelineButton" id="LandWarsButton">
-                                Maori Land Wars
+                                Māori Land Wars
                             </button>
                         </div>
-                        <div class="Timeline-Item" id="MaoriParty">
-                            <p class="Timeline-Date" id="MaoriPartyDate">2004</p>
-                            <button onclick="change('MaoriPartyButton', 'MaoriPartyDate'); slide('right');" class="TimelineButton" id="MaoriPartyButton">
-                                Maori Political Party Formed
+                        <div class="Timeline-Item" id="MāoriParty">
+                            <p class="Timeline-Date" id="MāoriPartyDate">2004</p>
+                            <button onclick="change('MāoriPartyButton', 'MāoriPartyDate'); slide('right');" class="TimelineButton" id="MāoriPartyButton">
+                                Māori Political Party Formed
                             </button>
                         </div>
                     </div>
@@ -116,13 +118,13 @@
         const voyageButton = document.getElementById('VoyageButton');
         const treatyButton = document.getElementById('TreatyButton');
         const landWarsButton = document.getElementById('LandWarsButton');
-        const partyButton = document.getElementById('MaoriPartyButton');
+        const partyButton = document.getElementById('MāoriPartyButton');
         let buttonList = [voyageButton, treatyButton, landWarsButton, partyButton];
 
         const voyageDate = document.getElementById('VoyageDate');
         const treatyDate = document.getElementById('TreatyDate');
         const landWarsDate = document.getElementById('LandWarsDate');
-        const partyDate = document.getElementById('MaoriPartyDate');
+        const partyDate = document.getElementById('MāoriPartyDate');
         let dateList = [voyageDate, treatyDate, landWarsDate, partyDate];
 
         const contentTitle = document.getElementById('History-Content-Title');
@@ -130,12 +132,12 @@
         const contentImage = document.getElementById('History-Content-Image');
         const contentImageCredit = document.getElementById('History-Content-Image-Credit');
         const NZImage = document.getElementById('History-Image');
-        let contentTitleList = ["Voyage from Hawaiki to New Zealand", "The Signing of The Treaty Of Waitangi", "Land Wars between Maori and British", "The Creation of the Maori Political Party"];
+        let contentTitleList = ["Voyage from Hawaiki to New Zealand", "The Signing of The Treaty Of Waitangi", "Land Wars between Māori and British", "The Creation of the Māori Political Party"];
         let contentMainList = [
-            "Maori first arrived in New Zealand between 1250 and 1300. On their journey, they navigated by star patterns and ocean currents to cross the sea. They travelled this distance using a Waka (image below), as they could carry as many as 12 up to 100 people.",
-            "The signing of The Treaty of Waitangi took place in 1840. The Treaty was signed over 7 months between British Governors and Maori Chiefs from NZ. From this, the British were allowed to buy land from the Maori with items such as Muskets, Blankets, and more.", 
-            "Around 1843-1870 was when The Maori Land Wars happened. These were multiple wars over land rights between the British and Maori Iwi. Each war was typically started over a disagreement between sales of Maori Land, which led to a loss of trust across the country. This divided the Maori and The Crown as they continued to dispute over New Zealand Land.", 
-            "In 2004, One of the Members of Parliament, Tariana Turia created the Maori Party. This act was made after the decisions made by the Labour Party's view on Seabed Fishing, leading her to stand for Maori Values in a new party. This was supported by Maori across the country, along with the creation of the Official Party called: 'Te Pati Maori'."
+            "Māori first arrived in New Zealand between 1250 and 1300. On their journey, they navigated by star patterns and ocean currents to cross the sea. They travelled this distance using a Waka (image below), as they could carry as many as 12 up to 100 people.",
+            "The signing of The Treaty of Waitangi took place in 1840. The Treaty was signed over 7 months between British Governors and Māori Chiefs from NZ. From this, the British were allowed to buy land from the Māori with items such as Muskets, Blankets, and more.", 
+            "Around 1843-1870 was when The Māori Land Wars happened. These were multiple wars over land rights between the British and Māori Iwi. Each war was typically started over a disagreement between sales of Māori Land, which led to a loss of trust across the country. This divided the Māori and The Crown as they continued to dispute over New Zealand Land.", 
+            "In 2004, One of the Members of Parliament, Tariana Turia created the Māori Party. This act was made after the decisions made by the Labour Party's view on Seabed Fishing, leading her to stand for Māori Values in a new party. This was supported by Māori across the country, along with the creation of the Official Party called: 'Te Pati Māori'."
         ];
         let contentMainFontSizeList = ["30px", "30px", "26px", "26px"];
         let contentImageList = ["Images/History/ContentImages/History_WakaImage.png", "Images/History/ContentImages/History_TreatyImage.png", "Images/History/ContentImages/History_WarsImage.png", "Images/History/ContentImages/History_ProtestImage.png"];
