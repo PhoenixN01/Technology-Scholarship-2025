@@ -114,7 +114,7 @@ Promise.all([
     const tick = () => {
         const elapsedTime = clock.getElapsedTime();
 
-        earth.rotation.y = elapsedTime * 0.04;
+        earth.rotation.y = elapsedTime * 0.04 + 3;
 
         directionalLight.position.x = Math.sin(Date.now() * 0.00001) * 10;
         directionalLight.position.z = Math.cos(Date.now() * 0.00001) * 10;

@@ -165,7 +165,7 @@ Promise.all([
         const elapsedTime = clock.getElapsedTime();
 
         // Rotate Earth
-        earth.rotation.y = elapsedTime * 0.04;
+        earth.rotation.y = elapsedTime * 0.04 + 3;
 
         // Update light position
         directionalLight.position.x = Math.sin(Date.now() * 0.00001) * 10;
