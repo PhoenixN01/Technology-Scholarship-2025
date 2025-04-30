@@ -329,9 +329,6 @@ Index.html Styling
     bottom: 250px;
     right: 150px;
     width: 255px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-size: 30px;
 
 }
@@ -340,9 +337,6 @@ Index.html Styling
 .indexButton.Traditions {
     bottom: 100px;
     width: 450px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-size: 28px;
 }
 
@@ -351,9 +345,6 @@ Index.html Styling
     bottom: 250px;
     left: 150px;
     width: 255px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-size: 30px;
 }
 
@@ -365,29 +356,16 @@ Index.html Styling
     box-shadow: 5px 10px 4px rgba(0, 0, 0, 0.5);
     border-radius: 8px;
     border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* formats the History link in its nav button */
-.HistoryLink {
+/* formats the Hero Index links in their nav buttons */
+.indexHeroLink {
     color: rgb(255, 255, 255);
     font-family: 'lunasima', sans-serif;
     font-weight: bolder;
-    text-decoration: none;
-}
-
-/* formats the Traditions link in its nav button */
-.TraditionsLink {
-    color: rgb(255, 255, 255);
-    font-family: 'lunasima', sans-serif;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-/* formats the Connections link in its nav button */
-.ConnectionsLink {
-    color: rgb(255, 255, 255);
-    font-family: 'lunasima', sans-serif;
-    font-weight: bold;
     text-decoration: none;
 }
 
