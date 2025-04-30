@@ -938,3 +938,13 @@ Connections.html Styling
     font-weight: bold;
     text-align: justify;
 }
+
+#Accessible-gallery-trigger {
+    margin: 0 auto;
+    font-family: 'Josefin Sans';
+    font-size: 10px;
+    font-weight: bold;
+    color: rgba(215, 215, 215, 0.5);
+    background-color: transparent;
+    border: none;
+}
