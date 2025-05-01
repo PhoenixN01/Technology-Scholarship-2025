@@ -205,7 +205,7 @@ main {
 
 /* formats background specifically for traditions.html */
 .traditions-bg {
-    height: 3898px !important;
+    height: 3908px !important;
 }
 
 /* formats background specifically for connections.html */
@@ -477,6 +477,14 @@ History.html Styling
 #History-Content-Image-Credit {
     font-size: 14px;
     color: rgba(0, 0, 0, 0.7);
+}
+
+#History-NZMap-Container {
+    width: 441px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 /* formats the container of the History Timeline */
@@ -802,6 +810,10 @@ Traditions.html Styling
     bottom: 150px;
 }
 
+#Traditions-Pattern-Credit {
+    position: relative;
+    bottom: 150px;
+}
 
 
 /* 
