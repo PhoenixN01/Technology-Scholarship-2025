@@ -174,20 +174,23 @@
         };
     </script>
     <script>
-        const timeline = document.querySelector(".History-Timeline-Container");
+        const timeline = document.getElementById("History-Timeline-Container");
 
         function slide(direction) {
             const maxScroll = timeline.scrollWidth - timeline.clientWidth;
+            console.log(maxScroll);
             if (direction === 'right') {
                 timeline.scrollTo({
                     left: maxScroll,
                     behavior: 'smooth'
                 });
+                console.log("Scrolling left");
             } else {
                 timeline.scrollTo({
                     left: 0,
                     behavior: 'smooth'
                 });
+                console.log("Scrolling right");
             }
         };
     </script>
