@@ -1069,6 +1069,11 @@ Connections.html Styling
     width: 315px !important;
 }
 
+/* Ensures that Australia Flag is properly sized */
+#Australia-Gallery-Flag {
+    width: 373px !important;
+}
+
 /* Format the body content for each gallery card */
 .Gallery-Content-MainContent {
     margin: 20px auto 0;

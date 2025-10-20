@@ -89,7 +89,10 @@ Promise.all([
         { index: 1,id: 'Japan', lat: 35.6762, lon: 139.6503 },
         { index: 2, id: 'Mexico', lat: 23.6345, lon: -102.5528 },
         { index: 3, id: 'Scotland', lat: 56.4907, lon: -4.2026 },
-        { index: 4, id: 'China', lat: 35.8617, lon: 104.1954 }
+        { index: 4, id: 'China', lat: 35.8617, lon: 104.1954 },
+        { index: 5, id: 'Australia', lat: -25.2744, lon: 133.7751 },
+        { index: 6, id: 'Philippines', lat: 12.8797, lon: 121.7740 },
+        { index: 7, id: 'India', lat: 20.5937, lon: 78.9629 }
     ];
 
     const normalMap = new THREE.TextureLoader().load('Javascript/Connections_Earth/Location-Marker.png');
