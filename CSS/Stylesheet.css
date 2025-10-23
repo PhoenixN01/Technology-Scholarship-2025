@@ -590,7 +590,7 @@ History.html Styling
 #History-Content-Main {
     margin: auto;
     font-family: 'Josefin Sans';
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bold;
     line-height: 1.2;
 }
@@ -668,6 +668,11 @@ History.html Styling
     font-weight: bold;
     text-align: center;
     line-height: 1.2;   
+}
+
+/* Sets the active button as disabled */
+.active-button {
+    pointer-events: none;
 }
 
 /* formats specific sizing for the Voyage Button */

@@ -157,7 +157,8 @@
                     buttonList[i].classList.remove('active-button');
                     buttonList[i].style.pointerEvents = 'auto';
                     dateList[i].classList.remove('active-date');
-                } else if (buttonList[i].id === button) {
+                } 
+                if (buttonList[i].id === button) {
                     buttonList[i].classList.add('active-button');
                     buttonList[i].style.pointerEvents = 'none';
                     dateList[i].classList.add('active-date');
