@@ -71,25 +71,25 @@
                     <div id="History-Timeline">
                         <div class="Timeline-Item" id="Voyage">
                             <p class="Timeline-Date active-date" id="VoyageDate">1250 - 1300 (AD)</p>
-                            <button onclick="change('VoyageButton', 'VoyageDate'); slide('left');" class="TimelineButton active-button" id="VoyageButton">
+                            <button onclick="change('VoyageButton'); slide('left');" class="TimelineButton active-button" id="VoyageButton">
                                 Māori Voyage from Hawaiki to New Zealand
                             </button>
                         </div>
                         <div class="Timeline-Item" id="Treaty">
                             <p class="Timeline-Date" id="TreatyDate">1840</p>
-                            <button onclick="change('TreatyButton', 'TreatyDate'); slide('left');" class="TimelineButton" id="TreatyButton">
+                            <button onclick="change('TreatyButton'); slide('left');" class="TimelineButton" id="TreatyButton">
                                 Treaty of Waitangi Signed
                             </button>
                         </div>
                         <div class="Timeline-Item" id="LandWars">
                             <p class="Timeline-Date" id="LandWarsDate">1843 - 1870</p>
-                            <button onclick="change('LandWarsButton', 'LandWarsDate'); slide('right');" class="TimelineButton" id="LandWarsButton">
+                            <button onclick="change('LandWarsButton'); slide('right');" class="TimelineButton" id="LandWarsButton">
                                 Māori Land Wars
                             </button>
                         </div>
                         <div class="Timeline-Item" id="MāoriParty">
                             <p class="Timeline-Date" id="MāoriPartyDate">2004</p>
-                            <button onclick="change('MāoriPartyButton', 'MāoriPartyDate'); slide('right');" class="TimelineButton" id="MāoriPartyButton">
+                            <button onclick="change('MāoriPartyButton'); slide('right');" class="TimelineButton" id="MāoriPartyButton">
                                 Māori Political Party Formed
                             </button>
                         </div>
@@ -150,7 +150,7 @@
         ];
         let NZImageList = ["Images/History/NZMaps/History_NZMap1.png", "Images/History/NZMaps/History_NZMap2.png", "Images/History/NZMaps/History_NZMap3.png", "Images/History/NZMaps/History_NZMap4.png"];
 
-        function change(button, date) {
+        function change(button) {
             let selectedButton = document.querySelector(".active-button");
             for (var i = 0; i < buttonList.length; i++) {
                 if (buttonList[i].classList.contains('active-button')) {
